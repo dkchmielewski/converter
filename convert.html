@@ -8,10 +8,17 @@
         }
     </style>
     <script>
-
+        function cToF(x) {
+            var f = x * 1.8 + 32;
+            var message = x + " Celcius is " + f + " Fahrenheits";
+            alert(message);
+        }
     </script>
 </head>
 <body>
     <h1>Welcome to the Converter!</h1>
+    <input type="button" id="button1" name="ten" value="10 C to F" onclick="cToF(10)" />
+    <input type="button" id="button2" name="twenty" value="20 C to F" onclick="cToF(20)" />
+    <input type="button" id="button3" name="thirty" value="30 C to F" onclick="cToF(30)" />
 </body>
 </html>
